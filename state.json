@@ -1,7 +1,6 @@
 {
  "baseline_done": true,
  "known_dates": [
-  "20260804",
   "20260805",
   "20260806",
   "20260807",
@@ -125,9 +124,9 @@
   "20260818|2030|20054745|018",
   "20260818|2400|20054745|018"
  ],
- "cycle": 6,
+ "cycle": 7,
  "consecutive_failures": 0,
  "request_count_date": "2026-08-04",
- "request_count": 23,
+ "request_count": 24,
  "block_warned": false
 }
