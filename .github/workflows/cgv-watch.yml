@@ -1,0 +1,47 @@
+name: CGV watch
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # 15분 간격 (GitHub 사정으로 몇 분씩 지연될 수 있음)
+  workflow_dispatch:          # 수동 실행 버튼
+
+# 동시 실행 방지 (지연으로 겹칠 경우 대비)
+concurrency:
+  group: cgv-watch
+  cancel-in-progress: false
+
+permissions:
+  contents: write             # state.json 커밋용
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install curl_cffi
+
+      - name: config 준비
+        run: cp config.example.json config.json
+
+      - name: 감시 사이클 1회 실행
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python cgv_watch.py --once
+
+      - name: 상태 저장 (state.json 커밋)
+        run: |
+          git config user.name "cgv-watch-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add state.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: state update"
+            git pull --rebase origin ${GITHUB_REF_NAME} || true
+            git push
+          fi

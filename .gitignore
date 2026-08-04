@@ -1,0 +1,6 @@
+# 웹훅 URL이 들어가는 로컬 설정 — 절대 커밋 금지 (Actions는 config.example.json + 시크릿 사용)
+config.json
+*.log
+*.log.*
+.DS_Store
+__pycache__/

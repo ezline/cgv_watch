@@ -1,0 +1,11 @@
+{
+  "discord_webhook_url": "",
+  "site_no": "0013",
+  "site_name": "용산아이파크몰",
+  "movie_keywords": ["오디세이"],
+  "screen_keywords": ["IMAX"],
+  "poll_interval_sec": 600,
+  "sweep_every_n_cycles": 6,
+  "max_schedule_requests_per_cycle": 8,
+  "daily_request_cap": 400
+}
