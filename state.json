@@ -20,7 +20,6 @@
   "20260829"
  ],
  "checked_dates": [
-  "20260804",
   "20260805",
   "20260806",
   "20260807",
@@ -124,9 +123,9 @@
   "20260818|2030|20054745|018",
   "20260818|2400|20054745|018"
  ],
- "cycle": 10,
+ "cycle": 11,
  "consecutive_failures": 0,
- "request_count_date": "2026-08-04",
- "request_count": 27,
+ "request_count_date": "2026-08-05",
+ "request_count": 1,
  "block_warned": false
 }
