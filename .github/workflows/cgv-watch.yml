@@ -1,8 +1,9 @@
 name: CGV watch
 
 on:
-  schedule:
-    - cron: "*/15 * * * *"   # 15분 간격 (GitHub 사정으로 몇 분씩 지연될 수 있음)
+  # 예매 완료로 자동 감시 중단 (다시 켜려면 아래 주석 해제)
+  # schedule:
+  #   - cron: "*/15 * * * *"   # 15분 간격 (GitHub 사정으로 몇 분씩 지연될 수 있음)
   workflow_dispatch:          # 수동 실행 버튼
 
 # 동시 실행 방지 (지연으로 겹칠 경우 대비)
