@@ -1,6 +1,6 @@
 # CGV 예매 오픈 감시기
 
-CGV 용산아이파크몰 IMAX관의 특정 영화(기본: 오디세이) 예매가 열리면 디스코드로 알려주는 개인용 스크립트.
+CGV 천호 IMAX관의 특정 영화(기본: 오디세이) 예매가 열리면 디스코드로 알려주는 개인용 스크립트.
 
 ## 실행 방식 A: GitHub Actions
 
@@ -42,7 +42,7 @@ caffeinate -is python3 cgv_watch.py >> watch.out 2>&1 &
 |---|---|---|
 | `movie_keywords` | 영화 제목에 포함될 키워드 (OR) | `["오디세이"]` |
 | `screen_keywords` | 관 이름에 포함될 키워드 (OR) | `["IMAX"]` |
-| `site_no` | 극장 코드 (용산아이파크몰=0013) | `"0013"` |
+| `site_no` | 극장 코드 (천호=0199, 용산아이파크몰=0013) | `"0199"` |
 | `poll_interval_sec` | 폴링 간격(초). 600 미만 비권장 | `600` |
 | `max_schedule_requests_per_cycle` | 사이클당 스케줄 조회 상한 | `8` |
 | `daily_request_cap` | 하루 총 요청 상한 (초과 시 자정까지 휴지) | `400` |
