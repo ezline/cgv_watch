@@ -25,9 +25,9 @@
   "20260927"
  ],
  "seen_keys": [],
- "cycle": 122,
- "consecutive_failures": 0,
+ "cycle": 123,
+ "consecutive_failures": 1,
  "request_count_date": "2026-09-18",
- "request_count": 3,
- "block_warned": false
+ "request_count": 4,
+ "block_warned": true
 }
