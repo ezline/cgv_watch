@@ -1,7 +1,6 @@
 {
  "baseline_done": true,
  "known_dates": [
-  "20260918",
   "20260919",
   "20260921",
   "20260922",
@@ -25,9 +24,9 @@
   "20260927"
  ],
  "seen_keys": [],
- "cycle": 123,
- "consecutive_failures": 1,
+ "cycle": 124,
+ "consecutive_failures": 0,
  "request_count_date": "2026-09-18",
- "request_count": 4,
- "block_warned": true
+ "request_count": 5,
+ "block_warned": false
 }
