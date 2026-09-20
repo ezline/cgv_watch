@@ -36,9 +36,9 @@
   "20260929|1945|20054745|006",
   "20260929|2310|20054745|006"
  ],
- "cycle": 136,
- "consecutive_failures": 1,
+ "cycle": 137,
+ "consecutive_failures": 0,
  "request_count_date": "2026-09-20",
- "request_count": 2,
- "block_warned": true
+ "request_count": 3,
+ "block_warned": false
 }
