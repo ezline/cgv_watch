@@ -12,7 +12,6 @@
   "20260929"
  ],
  "checked_dates": [
-  "20260920",
   "20260921",
   "20260922",
   "20260923",
@@ -35,9 +34,9 @@
   "20260929|1945|20054745|006",
   "20260929|2310|20054745|006"
  ],
- "cycle": 141,
- "consecutive_failures": 1,
- "request_count_date": "2026-09-20",
- "request_count": 7,
- "block_warned": true
+ "cycle": 142,
+ "consecutive_failures": 0,
+ "request_count_date": "2026-09-21",
+ "request_count": 1,
+ "block_warned": false
 }
